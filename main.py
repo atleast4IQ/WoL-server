@@ -3,10 +3,13 @@ from wakeonlan import send_magic_packet
 
 app = Flask(__name__)
 
-@app.route('/')
-def wake_on_lan():
-    send_magic_packet('DE:AD:BE:EF:00:00')  # replace with your MAC-Adress
-    return 'WOL send!'
+@app.route('/<mac_address>')
+def wake_on_lan(mac_address):
+    try:
+        send_magic_packet(mac_address)
+        return f'WOL an {mac_address} sent! <script>window.close()</script>'
+    except Exception as e:
+        return f'Fehler: {str(e)}', 400
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
