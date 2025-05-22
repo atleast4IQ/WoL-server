@@ -32,11 +32,6 @@ Open a browser or send a request to:
 http://<server-ip>:5000/<mac-address>
 ```
 
-## Response
-- On success: Displays a confirmation and closes the window.
-
-- On error: Returns an error message and HTTP 400.
-
 ## Notes
 - Ensure WOL is enabled in BIOS and on the network adapter.
 - With PORT Forwarding this tool can be accessed from outside the local network (USE AT YOUR OWN RISK)
