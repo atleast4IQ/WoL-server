@@ -5,7 +5,6 @@ This is a minimal Python Flask application that allows you to trigger Wake-on-LA
 ## Features
 
 - Send a WOL magic packet to a specified MAC address via HTTP
-- Simple REST-style interface
 - Easy to deploy on any system with Python
 
 ## Requirements
