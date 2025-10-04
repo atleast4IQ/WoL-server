@@ -21,7 +21,7 @@ pip install flask wakeonlan
 
 ## Usage
 ```bash
-python app.py
+python main.py
 ```
 This starts a web server on http://0.0.0.0:5000
 
